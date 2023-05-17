@@ -32,14 +32,14 @@ Méthode: GET
 Description: Cet endpoint renvoie les détails d'une annonce spécifique présent en base de données, en utilisant l'identifiant de l'annonce (annonce_id) passé en tant que paramètre dans l'URL. Les détails d'une annonce sont représentés par un objet JSON qui contient les champs suivants : id, name, description, price et user_id.
 
 ## Pour modifier une annonce par son id:
-Endpoint: /updateAnnonce/{annonce_id}
+Endpoint: /annonces/{annonce_id}
 
 Méthode : PUT
 
 Description : Cet endpoint permet de modifier les informations d'une annonce spécifique présent dans la base de données. L'identifiant d'une annonce (annonce_id) doit être passé en tant que paramètre dans l'URL. Les modifications des champs d'une annonce doivent être envoyées dans le corps de la requête au format JSON.
 
-## Pour modifier une annonce par son id:
-Endpoint : /annonce/{annonce_id}
+## Pour supprimer une annonce par son id:
+Endpoint : /annonces/{annonce_id}
 
 Méthode : DELETE
 
@@ -52,11 +52,10 @@ Description : Cet endpoint permet de supprimer une annonce spécifique de la bas
   "description": {Description},
   "price": 50.99,
   "user_id": 1,
-  "created_date": “2023-05-16:14:17” ,
 }`
 
 ## Détail des champs:
-id: Identifiant unique pour chaque annonces
+id: Identifiant unique pour chaque annonce
 
 name: Le nom du produit ou de l'article
 
